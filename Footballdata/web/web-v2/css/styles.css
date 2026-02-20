@@ -1,0 +1,19 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.mi_boton {
+    margin: 5px 5px;
+    min-width: 200px;
+}
+#miLista {
+    display: none;
+}
+#miListaOrdenacion {
+    display: none;
+}
+.hidden {
+    display: none;
+}

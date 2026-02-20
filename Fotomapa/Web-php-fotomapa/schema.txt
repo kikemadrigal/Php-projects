@@ -1,0 +1,72 @@
+Base de datos
+db718799277
+Descripci�n
+fotomurcia
+
+Nombre de host
+db718799277.db.1and1.com
+
+Puerto
+3306
+Nombre de usuario
+dbo718799277
+Tipo y versi�n
+MySQL 5.5
+Almacenamiento
+Configurando
+
+use db718799277;
+CREATE TABLE IF NOT EXISTS `fotos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(60) COLLATE latin1_spanish_ci NOT NULL,
+  `text` longtext COLLATE latin1_spanish_ci NOT NULL,
+  `type` varchar(80) COLLATE latin1_spanish_ci NOT NULL,
+  `address` varchar(100) COLLATE latin1_spanish_ci NOT NULL,
+  `city` varchar(80) COLLATE latin1_spanish_ci NOT NULL,
+  `lat` float(10,6) NOT NULL,
+  `lng` float(10,6) NOT NULL,
+  `user` varchar(100) COLLATE latin1_spanish_ci NOT NULL,
+  `timestamp` varchar(100) COLLATE latin1_spanish_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci AUTO_INCREMENT=1 ;
+/********************************************************/
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(50) COLLATE latin1_spanish_ci NOT NULL,
+  `clave` varchar(255) COLLATE latin1_spanish_ci NOT NULL,
+  `tipo` varchar(50) COLLATE latin1_spanish_ci NOT NULL,
+  `correo` varchar(255) COLLATE latin1_spanish_ci NOT NULL,
+  `nombrereal` varchar(100) COLLATE latin1_spanish_ci NOT NULL,
+  `apellidos` varchar(255) COLLATE latin1_spanish_ci NOT NULL,
+  `web` varchar(100) COLLATE latin1_spanish_ci NOT NULL,
+  `validado` smallint(2) NOT NULL DEFAULT '0',
+  `contador` int(100) NOT NULL,
+  `fecha` varchar(255) COLLATE latin1_spanish_ci NOT NULL,
+  `datos` longtext COLLATE latin1_spanish_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `nombre` (`nombre`),
+  UNIQUE KEY `correo` (`correo`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci AUTO_INCREMENT=47 ;
+/***********************************************************/
+
+
+tabla usuarios de fotomapa.EXISTS
+CREATE TABLE `usuarios` (
+  `id` int(6) NOT NULL,
+  `nombre` varchar(50) COLLATE latin1_spanish_ci NOT NULL,
+  `clave` varchar(255) COLLATE latin1_spanish_ci NOT NULL,
+  `tipo` varchar(50) COLLATE latin1_spanish_ci NOT NULL,
+  `correo` varchar(255) COLLATE latin1_spanish_ci NOT NULL,
+  `nombrereal` varchar(100) COLLATE latin1_spanish_ci NOT NULL,
+  `apellidos` varchar(255) COLLATE latin1_spanish_ci NOT NULL,
+  `web` varchar(100) COLLATE latin1_spanish_ci NOT NULL,
+  `validado` smallint(2) NOT NULL DEFAULT '0',
+  `contador` int(100) NOT NULL,
+  `fecha` varchar(255) COLLATE latin1_spanish_ci NOT NULL,
+  `datos` longtext COLLATE latin1_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
+
+INSERT INTO `usuarios` (`id`, `nombre`, `clave`, `tipo`, `correo`, `nombrereal`, `apellidos`, `web`, `validado`, `contador`, `fecha`, `datos`) VALUES
+(21, 'kike', '$2y$10$4b5gQSfMXoMsXN3G0gwkTuX5d2KaTeFMiPhxpqWmXkc59Od5uWeNy', 'usuario', 'kikemadrigal@hotmail.com', 'nada', 'nada', 'nada', 0, 0, '2018-04-20 16:43:37', ''),
+(22, 'IP:31.4.204.197', '$2y$10$FuMnA/6FvbyxLxZ.nT6HsuOJiDachHfiWFaIpTdNh82F01ivTcfxO', 'usuariosinregistrar', '', '', '', '', 0, 0, '2018-04-28 18:09:19', ''),
+(25, 'IP:31.4.204.208', '$2y$10$KMVeXiEFBJJEO6r5cZVbMOYkgii68Yxc/bOmSXWiCsI3GJwAlPMzO', 'usuariosinregistrar', '', '', '', '', 0, 0, '2018-05-27 20:33:38', '');

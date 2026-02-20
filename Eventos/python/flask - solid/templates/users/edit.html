@@ -1,0 +1,44 @@
+{% extends "plantilla.html" %}
+{% block title %}Editar{% endblock %}
+
+{% block content %}
+<!--
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                nombre TEXT,
+                password TEXT,
+                dni TEXT,
+                fecha_nacimiento TEXT,
+                direccion TEXT,
+                email TEXT,
+                roll,
+                validate
+
+-->
+
+<div class="container">
+    <h2>Update user: {{usuario}}</h2>
+    <form action="/user/edit" method="POST">
+        <label>Nombre</label>
+        <input type="text" name="nombre" value="{{ usuario[1] }}">
+        <label>Password</label>
+        <input type="text" name="password" value="{{ usuario[2] }}">
+        <label>dni</label>
+        <input type="text" name="dni" value="{{ usuario[3] }}">
+        <label>Fecha Nacimiento</label>
+        <input type="date" name="fecha_nac" value="{{ usuario[4] }}">
+        <label>direccion</label>
+        <input type="text" name="direccion" value="{{ usuario[5] }}">
+        <label>email</label>
+        <input type="text" name="email" value="{{ usuario[6] }}">
+        <label>Roll</label>
+        <input type="text" name="roll" value="{{ usuario[7] }}">
+        <label>Validate</label>
+        <input type="text" name="validate" value="{{ usuario[8] }}">
+
+        <input type="hidden" name="id" value="{{ usuario[0] }}">
+        <button type="submit">Actualizar</button>
+    </form>
+    <a href="/">Volver</a>
+</div>
+
+{% endblock %}

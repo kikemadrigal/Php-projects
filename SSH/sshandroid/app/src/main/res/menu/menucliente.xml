@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/clientes"
+        android:icon="@drawable/cliente"
+        android:title="Clientes"
+        app:showAsAction="always" />
+    <item android:id="@+id/comandos"
+        android:icon="@drawable/comando"
+        android:title="Comandos"
+        app:showAsAction="always" />
+
+</menu>

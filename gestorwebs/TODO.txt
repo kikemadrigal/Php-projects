@@ -1,0 +1,1 @@
+-Intenta convertir las fotos para que no se pesen nada desde linux

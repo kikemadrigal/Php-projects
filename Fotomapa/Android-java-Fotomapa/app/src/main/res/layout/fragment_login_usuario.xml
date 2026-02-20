@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".Fragments.Usuarios.LoginUsuarioFragment">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/azulclaro"
+        card_view:cardCornerRadius="16dp"
+        android:layout_margin="50dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/imageViewCrearUsuarioFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/login"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/textViewEmailLoginusuarioFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:hint="Introduce un email"
+
+                android:background="@android:color/white"
+                android:layout_marginTop="20dp"/>
+
+
+
+            <TextView
+                android:id="@+id/textViewPasswordLoginUsuarioFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Introduce un password"
+                android:background="@android:color/white"
+                android:layout_margin="20dp"
+                />
+
+
+            <Button
+                android:id="@+id/buttonCrearusuarioFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entrar"
+                android:background="@android:color/white"
+                android:layout_margin="10dp"/>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

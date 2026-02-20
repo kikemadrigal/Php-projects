@@ -1,0 +1,14 @@
+{% extends "plantilla.html" %}
+{% block title %}About{% endblock %}
+{% block content %}
+<div class="container">
+    <p><b>Menu administrador</b>: {{user}}</p>
+
+    <div class="row">
+        <div class="col-4 m-2"><a href="/users/getAll"><img src="{{ url_for('static', filename='images/personas.png') }}" width="300"  alt="admin"></a></div>
+        <div class="col-4 m-2"><a href="/events/getAll"></a><img src="{{ url_for('static', filename='images/eventos.png') }}"  width="300" alt="admin"></a></div>
+        <div class="col-4 m-2"><a href="/admin/ver_usuarios"></a><img src="{{ url_for('static', filename='images/configuracion.png') }}"  width="300" alt="admin"></a></div>
+        <div class="col-4 m-2"><a href="#"></a><img src="{{ url_for('static', filename='images/sin-foto.png') }}"  width="300" alt="admin"></a></div>
+    </div>
+</div>
+{% endblock %}

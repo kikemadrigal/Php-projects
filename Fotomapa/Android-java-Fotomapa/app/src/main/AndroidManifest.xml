@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.tipolisto.fotomapajava">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/imagencabecera"
+        android:label="Fotomapa.es"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".Fragments.Mapa.MapActivity"
+            android:label="Fotomapa"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDZmwjOzt4ZPc-Kpplkt-U1PZqnTB7MIyk" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="Fotomapa"
+            android:theme="@style/AppTheme.NoActionBar"></activity> <!-- android:theme="@style/AppTheme.NoActionBar" -->
+        <activity
+            android:name=".MainActivity"
+            android:label="Fotomapa"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

@@ -1,0 +1,52 @@
+{% extends "plantilla.html" %}
+{% block title %}Inicio{% endblock %}
+{% block content %}
+    <div class = "container">
+        <h1>Usuarios</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Identificador</th>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Fecha Nacimiento</th>
+                    <th>Editar</th>
+                    <th>Borrar</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for usuario in usuarios %}
+                <tr>
+                    <td>{{usuario[0]}}</td>
+                    <td>{{usuario[1]}}</td>
+                    <td>{{usuario[2]}}</td>
+                    <td>{{usuario[3]}}</td>
+                    <td>
+                        <form action="/editar_usuario" method="POST">
+                            <input type="hidden" name ="id" value="{{usuario[0]}}">
+                            <button type="submit" class="btn btn-primary">Editar</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/borrar_usuario" method="POST">
+                            <input type="hidden" name ="id" value="{{usuario[0]}}">
+                            <button type="submit" class="btn btn-danger">Borrar</button>
+                        </form>
+                    </td>
+                </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="container">
+        <h2>Crear usuario</h2>
+        <form action="/crear_usuario" method="POST">
+            <input type="text" name="nombre">Nombre
+            <input type="text" name="apellidos">Apellidos
+            <input type="date" name="fecha_nac">Fecha Nacimiento
+            <button type="submit">Crear</button>
+        </form>
+    </div>
+{% endblock %}

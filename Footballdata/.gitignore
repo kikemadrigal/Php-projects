@@ -1,0 +1,14 @@
+venv/
+desktop/venv/
+desktop/football-data.sqlite
+desktop/assets/datasets
+desktop/credentials.json
+desktop/credentials.bin
+desktop/dist/
+desktop/build/
+
+web/.vscode/ftp-sync.json
+web/.vscode/env.php
+web/env.php
+web/football-data.sqlite
+web/sqlite3.exe

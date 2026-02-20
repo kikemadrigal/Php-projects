@@ -1,0 +1,92 @@
+body{
+	background-color: azure;
+}
+.sidebar {
+	/*Normalmente el borde se define
+	border: 1px soild red; 1 pixel solido y rojo*/
+	border-style: double;
+	border-color: deepskyblue;
+	background-color: white;
+}
+#divGestorFotos {
+	color: white;
+	background-color: #7560F8;
+}
+#divGestorFotos>a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	margin: 15px;
+}
+
+#divGestorFotos:hover {
+	color: deepskyblue;
+	background-color: black;
+}
+#gestor-generico-comentarios {
+	color: white;
+	background-color: #6357FC;
+}
+#gestor-generico-comentarios:hover{
+	color: deepskyblue;
+	background-color: black;
+}
+
+#gestor-generico-favoritos {
+	color: white;
+	background-color: #340EF4;
+}
+#gestor-generico-favoritos:hover {
+	color: deepskyblue;
+	background-color: black;
+}
+
+.parte-gestor-entradas {
+	background-color: deepskyblue;
+	color: white;
+}
+.table-striped>tbody>tr:hover {
+	background-color: #182066;
+	color: white;
+}
+/*Apuntará a los tr y a los th imperaes dentro de tr dentro de la clase table-striped*/
+.table-striped>tbody>tr:nth-child(odd){
+	background-color: #CBE9F5;
+	
+}
+.table-striped>tbody>tr:nth-child(odd):hover{
+	background-color: #182066;
+	
+	
+}
+
+/*Apuntará al td hijo inmediato de tr hijo inmediato de tbody hijo inmediato de la clase table-striped*/
+.table-striped>tbody>tr>td {
+	border: none;
+}
+
+/* Para conseguir mayor espaciado ente el th y los tr, antes del tbody vamos a introducir un guion, 
+con display bock para que se comporte como un elemento de bloque*/
+tbody:before {
+	content: "-";
+	display: block;
+	line-height: 1em;
+	color: transparent !important;
+}
+
+/*Qiuitamos los bordes de los th*/
+.table>thead>tr>th {
+	border: none;
+}
+
+/*.capazoom {
+	display:none;
+	z-index: 300;
+	position:absolute;
+	min-height: 130px;
+	max-width:350px;
+	background-color: red;
+	border-style:double;
+	border-width:medium;
+	
+}*/

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azuloscuro"
+    android:padding="16dp"
+    android:gravity="center">
+    <!-- A CardView that contains a TextView -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/azulclaro"
+        card_view:cardCornerRadius="16dp"
+        android:layout_margin="50dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/imageViewCrearusuarioFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/register"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/textViewNombreCrearusuarioFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:hint="Introduce un nombre"
+
+                android:background="@android:color/white"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/textViewemailCrearusuarioFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Introduce un email"
+                android:background="@android:color/white"
+                android:layout_margin="20dp"
+                />
+
+            <TextView
+                android:id="@+id/textViewPasswordCrearusuarioFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Introduce un password"
+                android:background="@android:color/white"
+                android:layout_margin="20dp"
+                 />
+            <TextView
+                android:id="@+id/textViewRepitePasswordCrearusuarioFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Repite el password"
+                android:background="@android:color/white"
+                android:layout_margin="20dp"
+                />
+
+            <Button
+                android:id="@+id/buttonCrearusuarioFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crear"
+                android:background="@android:color/white"
+                android:layout_margin="10dp"/>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

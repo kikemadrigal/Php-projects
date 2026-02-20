@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Confuración">
+        <EditTextPreference
+            android:key="servidor"
+            android:title="Dirección"
+            android:summary="Introduce aquí la dirección del servidor MySQL"
+            android:dialogTitle="Introduce valor" />
+    </PreferenceCategory>
+</PreferenceScreen>

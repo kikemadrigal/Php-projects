@@ -1,0 +1,4 @@
+app/config/env.php
+media/users/*
+media/screenshots/*
+vendor/*

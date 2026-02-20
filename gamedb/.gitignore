@@ -1,0 +1,9 @@
+purephp/app/config/env.php
+purephp/media/users/*
+purephp/media/screenshots/*
+purephp/vendor/*
+
+purephp-no-mvc/app/config/env.php
+purephp-no-mvc/media/users/*
+purephp-no-mvc/media/screenshots/*
+purephp-no-mvc/vendor/*

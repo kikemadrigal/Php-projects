@@ -1,0 +1,70 @@
+{% extends "plantilla.html" %}
+{% block title %}usuarios{% endblock %}
+{% block content %}
+
+
+
+    <div class = "container">
+        <h1>Usuarios</h1>
+        <a href="/user/new"><button type="button" class="btn btn-primary">Menu</button></a>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Password</th>
+                    <th>DNI</th>
+                    <th>Fecha nacimiento</th>
+                    <th>Dirección</th>
+                    <th>Email</th>
+                    <th>Roll</th>
+                    <th>validado</th>
+                    <th>Editar</th>
+                    <th>Borrar</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for usuario in usuarios %}
+                <tr>
+                    <td>{{usuario[0]}}</td>
+                    <td>{{usuario[1]}}</td>
+                    <td>{{usuario[2]}}</td>
+                    <td>{{usuario[3]}}</td>
+                    <td>{{usuario[4]}}</td>
+                    <td>{{usuario[5]}}</td>
+                    <td>{{usuario[6]}}</td>
+                    <td>{{usuario[7]}}</td>
+                    <td>{{usuario[8]}}</td>
+                    <td>
+                        <form action="/user/form-edit" method="POST">
+                            <input type="hidden" name ="id" value="{{usuario[0]}}">
+                            <button type="submit" class="btn btn-primary">Editar</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="user/delete" method="POST">
+                            <input type="hidden" name ="id" value="{{usuario[0]}}">
+                            <button type="submit" class="btn btn-danger">Borrar</button>
+                        </form>
+                    </td>
+                </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <h2>Crear usuario</h2>
+        <form action="/crear_usuario" method="POST">
+            <input type="text" name="nombre">Nombre
+            <input type="text" name="password">password
+            <input type="text" name="dni">dni
+            <input type="text" name="fecha_nacimiento">Fecha de nacimiento 
+            <input type="date" name="direccion">Fecha Nacimiento
+            <input type="text" name="email">Dirección
+            <input type="text" name="roll">Email
+            <input type="text" name="validado">Validado
+            <button type="submit">Crear</button>
+        </form>
+    </div>
+{% endblock %}

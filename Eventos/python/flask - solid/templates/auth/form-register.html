@@ -1,0 +1,22 @@
+{% extends "plantilla.html" %}
+{% block title %}Inicio{% endblock %}
+{% block content %}
+    {% with flash_messages = get_flashed_messages() %}
+        {% if flash_messages %}
+            {% for message in flash_messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    <div class="container">
+        <h2>Register</h2>
+        <form action="/register" method="POST">
+            <input type="text" name="nombre">Nombre
+            <input type="text" name="dni">DNI
+            <input type="date" name="fecha_nacimiento">Fecha Nacimiento
+            <input type="text" name="direccion">Dirección
+            <input type="text" name="email">Email
+            <button type="submit">Register</button>
+        </form>
+    </div>
+{% endblock %}

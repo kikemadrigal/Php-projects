@@ -1,0 +1,26 @@
+#https://www.keycdn.com/support/htaccess-not-working
+
+#------------------------
+#      Production
+# Solo para servidor producción
+#------------------------
+#RewriteEngine On
+#RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+#RewriteBase /
+#RewriteRule ^index\.php$ - [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /index.php [L]
+
+#------------------------
+#      Developemnt
+#Si en local arrancas con "php -S localhost:80 router-htaccess.php" el archivo .htaccess no funciona ya que no tiene un servidor apache
+#------------------------
+RewriteEngine on
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+

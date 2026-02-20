@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Activities.EjecutarSSHActivity">
+        <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewTituloEjecutarSshActivity"
+            android:layout_margin="10dp"
+            android:text="Sin conexión"
+            android:textAlignment="center"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/botonEjecutarActivity"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/estilo_dos_boton"
+            android:textColor="@drawable/estilo_uno_texto_boton"
+            android:text="Ejecutar" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/spinnerComandosPorClienteEjecutarAcitivity"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/spinnerComandosEjecutarAcitivity"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/negro"
+                android:textColor="@color/blanco"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:text=">_  "
+                android:textSize="24dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/editTextCommandEjecutarSSHActivity"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/negro"
+                android:focusable="true"
+                android:gravity="start"
+                android:inputType="textNoSuggestions"
+                android:padding="0dp"
+                android:textAppearance="?android:attr/textAppearanceMediumInverse"
+                android:textColor="@color/blanco"
+
+                android:textSize="24dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textViewResultadoEjecutaSSHActivity"
+            android:background="@color/negro"
+            android:text="SSH:"
+            android:textColor="@color/blanco"
+            android:textSize="12dp"
+            android:scrollbars = "vertical"
+            android:minHeight="400dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+    </LinearLayout>
+</ScrollView>

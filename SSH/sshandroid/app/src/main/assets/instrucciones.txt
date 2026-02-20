@@ -1,0 +1,158 @@
+#Descripción
+
+Permite ejecutar comandos en ordenadores remotos a través de Secure Shell, también tiene un base de datos local con los equipos y una base de datos remota con los clientes y los comandos.
+
+#Instalación
+Consta de 2 paquetes
+
+
+
+##Parte android
+Muestra la interface para ejecutar los comandos y los clientes.
+Simplemente descarga el apk desde akí desde un dispositivo móvil e instala, deberás de tener habilitada la opción de ejecutar aplicaciones desconocidas en tu dispositivo móvil..
+
+
+
+##Parte Web
+1.Necesitarás un equipo con un MariaDB/Mysql y un servidor web con apache para ofrecer el API REST, descarga los archivos de y pégalos en la carpeta donde tienes tus webs,
+ en el caso de linux /var/www/html, todas las direcciones son redirigidas al ./index.php para que funcione tendrás que habilitar la sobreescritura en tu servidor web.
+
+Habilita el mod-rewrite de apache
+
+sudo a2enmod rewrite
+sudo nano /etc/apache2/apache2.conf
+Sustituye este texto:
+<Directory /var/www/>
+     Options Indexes FollowSymLinks
+     AllowOverride None
+     Require all granted
+</Directory>
+Por este:
+<Directory /var/www/>
+     Options Indexes FollowSymLinks
+     AllowOverride All
+     Require all granted
+</Directory>
+
+sudo service apache2 restart
+
+
+
+
+2.Crea y configura la base de datos:
+
+2.1 Crea la base de datos
+ejecuta estas instrucciones SQL en tu SGBD
+--Creando la base de datos ssh
+
+CREATE SCHEMA `ssh` DEFAULT CHARACTER SET utf8 ;
+
+--Si quieres borrar alguna tabla:
+--DROP TABLE IF EXISTS `nombreTabla`;
+
+-----------------------------------------------
+-----------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `clientes`
+--
+
+CREATE TABLE `clientes` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+`cif` varchar(50) NOT NULL,
+`nombre` varchar(255) NOT NULL,
+`datos` varchar(255),
+PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--Tambien es posible esto:
+/*
+CREATE TABLE `clientes` (
+`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+`cif` varchar(50) NOT NULL,
+`nombre` varchar(255) NOT NULL,
+`datos` varchar(255) NOT NULL,
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+*/
+
+--
+-- Volcado de datos para la tabla `clientes`
+--
+
+INSERT INTO `clientes` (`id`, `cif`, `nombre`, `datos`) VALUES
+(1, '01', 'Iberdrola', 'telefono 55555, calle avenida del mar'),
+(2, '02', 'Aguas de Murcia', 'teléfono 4444, calle Europa'),
+(3, '03', 'Pelayo seguros', 'teléfono 2222, calle general');
+
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `comandos`
+--
+
+CREATE TABLE `comandos` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+`nombre` varchar(255) NOT NULL,
+`datos` varchar(255),
+PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `comandos`
+--
+
+INSERT INTO `comandos` (`id`, `nombre`, `datos`) VALUES
+(1, 'ls', 'comando par alistar el contenido de un directorio'),
+(2, 'pwd', 'Comando para ver el distorio actual'),
+(3, 'php -v', 'comando para ver la versión de php instalada');
+
+-- --------------------------------------------------------
+--
+-- Estructura de tabla para la tabla `clientes-comandos`
+--
+CREATE TABLE `clientesComandos` (
+`id` INT NOT NULL AUTO_INCREMENT,
+`idCliente` INT NOT NULL,
+`idComando` INT NOT NULL,
+PRIMARY KEY (`id`),
+CONSTRAINT `fkClientesComandosClientes`
+FOREIGN KEY (`idCliente`)
+REFERENCES `clientes` (`id`)
+ON DELETE CASCADE
+ON UPDATE CASCADE,
+CONSTRAINT `fk_clientesComandosComandos`
+FOREIGN KEY (`idComando`)
+REFERENCES `comandos` (`id`)
+ON DELETE CASCADE
+ON UPDATE CASCADE);
+
+--
+-- Volcado de datos para la tabla `clientes-comandos`
+--
+
+INSERT INTO `clientesComandos` (`id`, `idCliente`, `idComando`) VALUES
+(1, 1, 2),
+(2, 1, 3),
+(3, 2, 1);
+
+
+
+2.2 Configura la base de datos:
+
+
+En el paquete que te has descargado, ve al archivo "config/env.php" y escribe:
+
+/*************
+	database
+**************/
+
+const SERVER="localhost";
+const USER=" "; //Tu nombre de usuario de la base de datos
+const PASSWORD=" "; //Tu contraseña
+const DATABASE="ssh";
+
+
+3.Configura la dirección de tu API REST en el programa Android:
+ Aunque si la dirección del servidor no está configurada te la pregunta puedes modificarla pinchando en el menú (los 3 puntos), en configuración servidor, y en cambiar servor, escribe la dirección de tu web local la cual ofrece el api rest, si has descarga el 2 paquete y lo has pegado donde están tus webs dentro de apache, la dirección será.
+

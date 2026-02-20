@@ -1,0 +1,41 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.mi_boton {
+    margin: 5px 5px;
+    min-width: 200px;
+}
+#miLista {
+    display: none;
+}
+#miListaOrdenacion {
+    display: none;
+}
+.hidden {
+    display: none;
+}
+/******Dejando la lista #list bonita******/
+#list {
+    display: none; /* oculta la lista */
+    list-style: none; /* Quita los puntos */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margen por defecto */
+}
+#list li {
+    background-color: #f0f0f0; /* Color de fondo para cada ítem */
+    margin-bottom: 10px; /* Espacio entre ítems */
+    padding: 10px; /* Espacio interno de los ítems */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    font-family: 'Arial', sans-serif; /* Fuente del texto */
+    font-size: 16px; /* Tamaño del texto */
+    transition: background-color 0.3s ease; /* Animación suave */
+}
+
+#list li:hover {
+    background-color: #e0e0e0; /* Cambia de color al pasar el ratón */
+}
+/***********Fin de dejar la lista #list bonita**********/

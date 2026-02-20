@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	#RewriteBase /prueba/
+	RewriteBase /
+	RewriteCond %{SCRIPT_FILENAME} !-d
+	RewriteCond %{SCRIPT_FILENAME} !-f
+	#RewriteRule  ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$	index.php?var1=$1&var2=$2&var3=$3
+	#RewriteRule  ^categoria/([0-9])$	gestionarwebs.php?idCategoria=$1
+	#RewriteRule  ^categoria/([a-zA-Z0-9_-]+)$  http://www.gestorwebs.tipolisto.es/gestionarwebs.php?idCategoria=81
+	RewriteRule ^categoria/(\w+)/?$ gestionarwebs.php?idCategoria=$1
+</IfModule>
+
+
+

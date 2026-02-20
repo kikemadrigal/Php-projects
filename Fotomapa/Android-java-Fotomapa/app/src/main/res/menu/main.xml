@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="Borrar datos usuario"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/anadir_item"
+        android:title="Añadir foto"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/ir_a_login"
+        android:title="Ir a login"
+        app:showAsAction="never"
+        />
+</menu>

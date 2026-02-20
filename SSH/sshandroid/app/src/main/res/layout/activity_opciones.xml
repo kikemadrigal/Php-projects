@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.OpcionesActivity">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewOpcionesActivity"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:hint="Servidor"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cambiar servidor"
+        android:layout_margin="20dp"
+        android:background="@drawable/estilo_dos_boton"
+        android:textColor="@drawable/estilo_uno_texto_boton"
+        android:id="@+id/buttonOpcionesActivity"/>
+
+    <Switch
+        android:id="@+id/switchOpcionesActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modo codeigniter"
+        android:layout_margin="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewModoCodeigniterOpcionesActivity"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Probar comunicacinó"
+        android:layout_margin="20dp"
+        android:background="@drawable/estilo_dos_boton"
+        android:textColor="@drawable/estilo_uno_texto_boton"
+        android:id="@+id/buttonProbarComunicacionOpcionesActivity"/>
+</LinearLayout>
+
+

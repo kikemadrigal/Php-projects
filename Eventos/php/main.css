@@ -1,0 +1,16 @@
+.clase {
+    background-color: #6f9695;
+}
+
+.informacion_evento{
+    background: url(images/clase.png) no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;	
+
+}
+.pizarra{
+    color: white;
+    background-color: #077d87;
+}

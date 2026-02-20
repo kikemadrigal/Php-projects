@@ -1,0 +1,294 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:2:1-54:12
+MERGED from [com.android.support:design:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/4419802c2ad776ea0dbd2ecbdc2c7b7a/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/7f900c4bfad57b3ed907af8417db951c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/despacho/.gradle/caches/transforms-2/files-2.1/a6fc74b90f749181a0795ff9fc260446/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/97b9f58d05be75530952be9f08358376/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/dfa3a8caca1209366876ecec64263241/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/cbfb9f3e79527dc01f69ac1c76946b72/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/69706d7ab979c4c11ca9648c6f5976db/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/49cbb3fce9f70a5e5ff60fc39fd3279b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.squareup.picasso:picasso:2.71828] /home/despacho/.gradle/caches/transforms-2/files-2.1/0bd77155c1d97046552827b4f836ef25/AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:support-fragment:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/993987b1013ad22124f744ba5caea32a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/68d82d5624d39b5d127bb7803ff2db34/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/e72428ef952a6766fb6e1f1c6a4011be/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/efd006968cfc8666fb15135c83f0be49/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/2a14d5727839be07ebd068733f1365b9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/79c53ac810ffcbaf5ac79e45a84abb11/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/96e7e580feeff39dcf525e8c53922d2a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/2b67a7073a45b7f3c3859a8be487dcbf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/060db3bd0342d73a10ea29bc9b9e2096/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/d76f3a33bdfc3a8746e7c7bfe053880c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/61cd9951ac395f16ae56b6974a017bb9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/ed07d6c918acb51a7c528d5a1b591d44/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/ee840e8d46e4de5648e47c4f5aaa43d3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/8bbcf5d87ef78203b6b82534df9d84a2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/66ef57a41ca82193ae67e204eb903ba7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/6f6a7579e60fce21c5a7b484924a576b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/22b6e08ba21eb617805d2a021115ab27/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/263735c687a14cc01b97dbb7fbc5dad5/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/018a1b12481559eecd09f1d5c8641d52/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/24b72a464c771d93d2c9fb703941fcda/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:exifinterface:27.1.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/fb60ae561d6ef68c19c46d60aa4fdab8/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/4ea055a45bead45a9dc9837f04909287/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/7c6bfb152d73a41ee568a50f6b4f046b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/c4f2d6f097d2b91e5f1c414b37c420d4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/bf131849937e6e541281083a6d366d46/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/d414466798f22d5f94a0feca887b2b78/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/56ad1a5bb155212625b8e1c9e642d013/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/43395cabbe2c11cb4819a1336b360a93/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/a64c9702c7131fd9588da6e9081714f5/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/7df16570f2f5a640a0e9227d58045c77/AndroidManifest.xml:17:1-22:12
+INJECTED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:2:1-54:12
+	package
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:3:5-40
+		INJECTED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml
+		INJECTED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:2:1-54:12
+		INJECTED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:2:1-54:12
+		INJECTED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:5:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/97b9f58d05be75530952be9f08358376/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/97b9f58d05be75530952be9f08358376/AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:6:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:7:22-78
+uses-feature#android.hardware.camera
+ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:9:5-11:35
+	android:required
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:11:9-32
+	android:name
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:10:9-47
+application
+ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:13:5-52:19
+MERGED from [com.android.support:design:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/4419802c2ad776ea0dbd2ecbdc2c7b7a/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/4419802c2ad776ea0dbd2ecbdc2c7b7a/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/despacho/.gradle/caches/transforms-2/files-2.1/a6fc74b90f749181a0795ff9fc260446/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/despacho/.gradle/caches/transforms-2/files-2.1/a6fc74b90f749181a0795ff9fc260446/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/97b9f58d05be75530952be9f08358376/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/97b9f58d05be75530952be9f08358376/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/dfa3a8caca1209366876ecec64263241/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/dfa3a8caca1209366876ecec64263241/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/cbfb9f3e79527dc01f69ac1c76946b72/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/cbfb9f3e79527dc01f69ac1c76946b72/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/69706d7ab979c4c11ca9648c6f5976db/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/69706d7ab979c4c11ca9648c6f5976db/AndroidManifest.xml:22:5-26:19
+MERGED from [com.squareup.picasso:picasso:2.71828] /home/despacho/.gradle/caches/transforms-2/files-2.1/0bd77155c1d97046552827b4f836ef25/AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] /home/despacho/.gradle/caches/transforms-2/files-2.1/0bd77155c1d97046552827b4f836ef25/AndroidManifest.xml:7:5-12:19
+MERGED from [com.android.support:support-compat:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/22b6e08ba21eb617805d2a021115ab27/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/22b6e08ba21eb617805d2a021115ab27/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/263735c687a14cc01b97dbb7fbc5dad5/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/263735c687a14cc01b97dbb7fbc5dad5/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/22b6e08ba21eb617805d2a021115ab27/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:19:9-35
+	android:label
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:17:9-36
+	android:roundIcon
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:18:9-54
+	android:icon
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:16:9-48
+	android:allowBackup
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:15:9-35
+	android:theme
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:20:9-40
+	android:name
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:14:9-30
+activity#es.tipolisto.fotomapajava.SplashActivity
+ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:21:9-29:20
+	android:theme
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:23:13-48
+	android:name
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:22:13-43
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:24:13-28:29
+action#android.intent.action.MAIN
+ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:25:17-69
+	android:name
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:25:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:27:17-77
+	android:name
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:27:27-74
+uses-library#org.apache.http.legacy
+ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:31:9-33:40
+	android:required
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:33:13-37
+	android:name
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:32:13-50
+activity#es.tipolisto.fotomapajava.Fragments.Mapa.MapActivity
+ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:35:9-38:59
+	android:label
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:37:13-37
+	android:theme
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:38:13-56
+	android:name
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:36:13-55
+meta-data#com.google.android.geo.API_KEY
+ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:40:9-42:71
+	android:value
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:42:13-68
+	android:name
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:41:13-58
+activity#es.tipolisto.fotomapajava.LoginActivity
+ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:44:9-47:68
+	android:label
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:46:13-37
+	android:theme
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:47:13-56
+	android:name
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:45:13-42
+activity#es.tipolisto.fotomapajava.MainActivity
+ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:48:9-51:59
+	android:label
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:50:13-37
+	android:theme
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:51:13-56
+	android:name
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml:49:13-41
+uses-sdk
+INJECTED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml
+INJECTED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/4419802c2ad776ea0dbd2ecbdc2c7b7a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/4419802c2ad776ea0dbd2ecbdc2c7b7a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/7f900c4bfad57b3ed907af8417db951c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/7f900c4bfad57b3ed907af8417db951c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/despacho/.gradle/caches/transforms-2/files-2.1/a6fc74b90f749181a0795ff9fc260446/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/despacho/.gradle/caches/transforms-2/files-2.1/a6fc74b90f749181a0795ff9fc260446/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/97b9f58d05be75530952be9f08358376/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/97b9f58d05be75530952be9f08358376/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/dfa3a8caca1209366876ecec64263241/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/dfa3a8caca1209366876ecec64263241/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/cbfb9f3e79527dc01f69ac1c76946b72/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/cbfb9f3e79527dc01f69ac1c76946b72/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/69706d7ab979c4c11ca9648c6f5976db/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/69706d7ab979c4c11ca9648c6f5976db/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/49cbb3fce9f70a5e5ff60fc39fd3279b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/49cbb3fce9f70a5e5ff60fc39fd3279b/AndroidManifest.xml:20:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] /home/despacho/.gradle/caches/transforms-2/files-2.1/0bd77155c1d97046552827b4f836ef25/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] /home/despacho/.gradle/caches/transforms-2/files-2.1/0bd77155c1d97046552827b4f836ef25/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/993987b1013ad22124f744ba5caea32a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/993987b1013ad22124f744ba5caea32a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/68d82d5624d39b5d127bb7803ff2db34/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/68d82d5624d39b5d127bb7803ff2db34/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/e72428ef952a6766fb6e1f1c6a4011be/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/e72428ef952a6766fb6e1f1c6a4011be/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/efd006968cfc8666fb15135c83f0be49/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/efd006968cfc8666fb15135c83f0be49/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/2a14d5727839be07ebd068733f1365b9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/2a14d5727839be07ebd068733f1365b9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/79c53ac810ffcbaf5ac79e45a84abb11/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/79c53ac810ffcbaf5ac79e45a84abb11/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/96e7e580feeff39dcf525e8c53922d2a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/96e7e580feeff39dcf525e8c53922d2a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/2b67a7073a45b7f3c3859a8be487dcbf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/2b67a7073a45b7f3c3859a8be487dcbf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/060db3bd0342d73a10ea29bc9b9e2096/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/060db3bd0342d73a10ea29bc9b9e2096/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/d76f3a33bdfc3a8746e7c7bfe053880c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/d76f3a33bdfc3a8746e7c7bfe053880c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/61cd9951ac395f16ae56b6974a017bb9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/61cd9951ac395f16ae56b6974a017bb9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/ed07d6c918acb51a7c528d5a1b591d44/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/ed07d6c918acb51a7c528d5a1b591d44/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/ee840e8d46e4de5648e47c4f5aaa43d3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/ee840e8d46e4de5648e47c4f5aaa43d3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/8bbcf5d87ef78203b6b82534df9d84a2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/8bbcf5d87ef78203b6b82534df9d84a2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/66ef57a41ca82193ae67e204eb903ba7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/66ef57a41ca82193ae67e204eb903ba7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/6f6a7579e60fce21c5a7b484924a576b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/6f6a7579e60fce21c5a7b484924a576b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/22b6e08ba21eb617805d2a021115ab27/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/22b6e08ba21eb617805d2a021115ab27/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/263735c687a14cc01b97dbb7fbc5dad5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/263735c687a14cc01b97dbb7fbc5dad5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/018a1b12481559eecd09f1d5c8641d52/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/018a1b12481559eecd09f1d5c8641d52/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/24b72a464c771d93d2c9fb703941fcda/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/24b72a464c771d93d2c9fb703941fcda/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/fb60ae561d6ef68c19c46d60aa4fdab8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/fb60ae561d6ef68c19c46d60aa4fdab8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/4ea055a45bead45a9dc9837f04909287/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/4ea055a45bead45a9dc9837f04909287/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/7c6bfb152d73a41ee568a50f6b4f046b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/7c6bfb152d73a41ee568a50f6b4f046b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/c4f2d6f097d2b91e5f1c414b37c420d4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/c4f2d6f097d2b91e5f1c414b37c420d4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/bf131849937e6e541281083a6d366d46/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/bf131849937e6e541281083a6d366d46/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/d414466798f22d5f94a0feca887b2b78/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/d414466798f22d5f94a0feca887b2b78/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/56ad1a5bb155212625b8e1c9e642d013/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/56ad1a5bb155212625b8e1c9e642d013/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/43395cabbe2c11cb4819a1336b360a93/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/43395cabbe2c11cb4819a1336b360a93/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/a64c9702c7131fd9588da6e9081714f5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/a64c9702c7131fd9588da6e9081714f5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/7df16570f2f5a640a0e9227d58045c77/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/7df16570f2f5a640a0e9227d58045c77/AndroidManifest.xml:20:5-44
+INJECTED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml
+INJECTED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml
+		INJECTED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml
+		ADDED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml
+		INJECTED from /media/despacho/26188F3D188F0B4F/Seguridad/Programas/Mis programas/Fotomapa/FotomapaJava/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:16.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/97b9f58d05be75530952be9f08358376/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:16.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/97b9f58d05be75530952be9f08358376/AndroidManifest.xml:23:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:16.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/97b9f58d05be75530952be9f08358376/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:16.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/97b9f58d05be75530952be9f08358376/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:16.0.0] /home/despacho/.gradle/caches/transforms-2/files-2.1/97b9f58d05be75530952be9f08358376/AndroidManifest.xml:28:9-32
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/dfa3a8caca1209366876ecec64263241/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/dfa3a8caca1209366876ecec64263241/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/dfa3a8caca1209366876ecec64263241/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/dfa3a8caca1209366876ecec64263241/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/69706d7ab979c4c11ca9648c6f5976db/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/69706d7ab979c4c11ca9648c6f5976db/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /home/despacho/.gradle/caches/transforms-2/files-2.1/69706d7ab979c4c11ca9648c6f5976db/AndroidManifest.xml:24:13-58
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] /home/despacho/.gradle/caches/transforms-2/files-2.1/0bd77155c1d97046552827b4f836ef25/AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.71828] /home/despacho/.gradle/caches/transforms-2/files-2.1/0bd77155c1d97046552827b4f836ef25/AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.picasso:picasso:2.71828] /home/despacho/.gradle/caches/transforms-2/files-2.1/0bd77155c1d97046552827b4f836ef25/AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.71828] /home/despacho/.gradle/caches/transforms-2/files-2.1/0bd77155c1d97046552827b4f836ef25/AndroidManifest.xml:9:13-64

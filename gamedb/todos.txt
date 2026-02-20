@@ -1,0 +1,13 @@
+arragle el modal del delete
+
+-cuando el usuario esté sin validar 24 horas que se elimine.
+
+Intenta volver a meterle el php mailer
+
+implementar update media
+
+Ponle 1 offset al boton delete
+
+Añade al zip del dsrabase las imagenes del usuario
+
+que se añadan al zip de descarga de database las imagenes de los usuarios

@@ -1,0 +1,189 @@
+@charset "utf-8";
+#girando {
+	width:50px;
+	font-size:36px;
+	color:#FF93C9;
+	font-weight:bold;
+	//text-shadow:5px 5px 5px #000;
+	animation:girando 3s infinite;
+	-webkit-animation:girando 3s infinite;
+	-moz-animation:girando 3s infinite;
+	-o-animation:girando 3s infinite;
+	-ms-animation:girando 3s infinite;
+}
+@keyframes girando {
+  from { transform: rotateY(0deg);    }
+  to   { transform: rotateY(-360deg); }
+}
+@-webkit-keyframes girando {
+  from { -webkit-transform: rotateY(0deg);    }
+  to   { -webkit-transform: rotateY(-360deg); }
+}
+@-moz-keyframes girando {
+  from { -moz-transform: rotateY(0deg);    }
+  to   { -moz-transform: rotateY(-360deg); }
+}
+@-o-keyframes girando {
+  from { -o-transform: rotateY(0deg);    }
+  to   { -o-transform: rotateY(-360deg); }
+}
+@-ms-keyframes girando {
+  from { -ms-transform: rotateY(0deg);    }
+  to   { -ms-transform: rotateY(-360deg); }
+}
+
+
+
+.tablawebs {
+	position:relative;
+	background-image:url(../imagenes/tunein.png);	
+	background-repeat:no-repeat;
+	background-size:auto;
+	background-position:center;
+	width:70%;
+	height:400px;
+}
+
+.votar {
+	position:absolute;
+	top: 350px; 
+	border-radius: 5px 10px; 
+ 	-webkit-border-radius: 5px 10px;  /* Safari  */
+ 	-moz-border-radius: 5px 10px;     /* Firefox */
+	background-color:#CCC;
+	font-size:24px;
+	color:red;
+	
+}
+
+.tituloweb {
+	
+	text-align:center;
+	font-size:24px;
+	color:red;
+}
+.divcategorias {
+	font-size:24px;
+	
+
+	
+}
+.contenedorimagenes {
+	width:120px;
+	height:auto;
+	font-size:14px;
+
+	/*display:inline;*/
+	/*float:left;*/
+	/*padding: 10px;*/
+	margin: 0 auto;
+	border:1px solid #000;
+	//text-wrap: break-word;
+	word-wrap: break-word;
+}
+.contenedorimagenesdewebs {
+	background-color:#FFFFB9;
+	/*float:left;*/
+	width:520px;
+	height:auto;
+	margin: 0 auto;
+	font-size:14px;
+	/*display:inline;*/
+	/*float:left;*/
+	/*padding-left: 100px;*/
+	padding:10px;
+	border:1px solid #000;
+	text-wrap: break-word;
+	-webkit-text-wrap: break-word;
+	-moz-text-wrap: break-word;
+	word-wrap: break-word;
+	-webkit-word-wrap: break-word;
+	-moz-word-wrap: break-word;
+	box-shadow: 5px 5px 0px #666;
+}
+
+.contenedorcomentarios{
+	//width:200px;
+	height:auto;
+	margin:auto;
+	font-size:-4px;
+	word-wrap:
+	text-wrap;
+	text-align: justify;
+	  white-space: pre-wrap;
+  white-space: -moz-pre-wrap; /* Mozilla */
+  white-space: -o-pre-wrap; /* Opera 7+ */
+}
+
+.menuadministradorwebs{
+	background-color:#CFF;
+	border: 2px #31F2DF;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+
+#menuausuarioswebs {
+	display:none;
+	
+	
+}
+ 
+.rotar{
+	/*position:absolute;*/
+	padding-bottom: 40px;
+	text-align:right;
+	text-justify:auto;
+	text-wrap:normal;
+	word-wrap:break-word;
+	overflow:hidden;
+	transform: rotate(90deg);
+ 
+      -webkit-transform: rotate(90deg);
+ 
+      -moz-transform: rotate(90deg);
+ 
+      -o-transform: rotate(90deg);
+}
+
+
+#capaemoticonos{
+	z-index: 200;
+	width:500px;
+	display:none;
+	position:absolute;
+	max-width:350px;
+	background-color:#FFBFBF;
+
+}
+
+#subcapaemoticonos{
+	z-index: 200;
+	width:350px;
+	max-width:350px;
+	background-color: #BFFFFF;
+}
+
+
+/*.imagenmas {
+	background: url(http://www.gestorwebs.tipolisto.es/imagenes/mas.png) no-repeat; 
+	width: 50px;
+	height: 50px;
+	border: hidden;
+} 
+.imagenmas:hover {
+	background: url(http://www.gestorwebs.tipolisto.es/imagenes/maspulsado.png) no-repeat; 
+	
+} 
+.imagenmenos {
+		width: 50px;
+	height: 50px;
+	background: url(http://www.gestorwebs.tipolisto.es/imagenes/menos.png) no-repeat; 
+	border: hidden;
+
+} 
+.imagenmenos:hover {
+	background: url(http://www.gestorwebs.tipolisto.es/imagenes/menospulsado.png) no-repeat; 
+
+} */

@@ -1,0 +1,21 @@
+{
+    "name": "casa/purephp",
+    "description": "Gamedb",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Casa\\Purephp\\": "views/",
+            "Casa\\Purephp\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "kikemadrigal",
+            "email": "kikemadrigal@hotmail.com"
+        }
+    ],
+    "require": {}
+}

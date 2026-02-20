@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "footballdata-439117",
+  "private_key_id": "966628aedc6bc8ed51df3c225a91439b73435018",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC6gDyGGZ7gkAv3\nrRzILHGi2DJAANHRvcyKYyBaFWPUU4VghhP3aB2pFVX1oR0r0o9d5jNmvjIRE1mf\nWI6O+kS2LyLHNPTXvdHUNa/ptguJHIKHmqc32eaUa7WTriows0pGAh4g5+hVGLU0\nOc7O0GTlBhSKxbqrb3/TdtsB/SYTp4WjpycrDu8dmtvWh4OUysiA1B7N72U+Ix9E\n80E6u4hRRothkBpwniy9MgVaAVvxOBMFn8gqyOrnh+rC2h0YLk/2kzuQvmXiBXD8\nTOtTGJAuRk1Uxuu3DawT/axRSt5lvi/oElARCOawysSHVT7J1FIpyGaMTbtte4lk\nyrle7hbRAgMBAAECggEAA4fBOfu5D6C1E/PrRQAW0M37iDERHQi4mwWQOcRP4x6y\nD4chUIO1sHeQXm7ubFGamAdvLBjSr8vWhz40c7u9RQJ4EtdEVlUg9nacXfXYU5xv\n/W6xOhP6oQ8M5E0WsAdPdrlYpjWy7dT/WDa8zqi6+t0Stj/9fENHDdLoQGMNkuiG\nrq79dGiJjF2/zLb3jiEd47RKTxgMsssxmTboVUEib/EC+DgewQo8tvEEy5gREa8s\n13Ws8ZYQZI+JoNMlV0HSFzYfvjfzbuvMZE5H3fXmsJrE/X0izWkvcTm7HmpICSCz\noQxlUT4inXoPcmQwm6vkPRSxowuFb3WWnIUUG9MLRQKBgQDy76lp8TwLXQrbP0xb\nhcfEPDiEzYzXVYNt9AEc9+gq5u2Dl5qtX20k0rFKQB9lJUt5LbP/B32w93tfOPFm\nB37g/1gAxIhGl30lXg8LUE+f/mD9dEN2vAYVo/tX+SVFy/QeMn4pcVzYasBBIjGc\nP+BB+yyDloLiZouGBu3NBPJucwKBgQDEh6sqvkj7XaezCqJNpFiPZBkK0tfa49qb\nhLTU6rp7Y/7erQEIlUNg9SDIRfr1CV5s9JcGwybdltMRx+LnIerWx9yuQ+TjeTDH\nx2usjgKzABvrmhiYM3W+tRqKPiG+JHiVpbT0jZRgcFHoBy7koBdYpIuwNCwDOFge\nQ0LCBaRwqwKBgQDwkUeQc6RkFFTl2/6/OvEhcAj/6ZSowDOQNGrNxuiPY3KcNwqi\n2LZ6GnIZ9vmf7ZiZfRqbV02uasQu/XJ++Lk6EWGSEQxp6yWwVT5Mk9DlvL9K/VC5\nSWQ1FdeVvFCel2M8a//nBi1M2hlb5oJ+Gfr3G8Vu4SLnE2ji5gWiWl2/5QKBgBR5\nvg+Z+6iUvWAd/4LvWHq4BxPlm6+mhaQmU2DLg9pPNMKma7ElO/viDiRPhjH5Y+ke\nIo4FzwrPJ/Z2SOGj2v+9mvRdBn/cpIRr9n/n28gifsYxK9bPpbjUzYsRphpVWmrc\n9Nl11ruleCMgfHY9Z7FIk3UsOlmriSK+BzqHs/Y5AoGADAVHiEzY+di4hCtOEOQ8\nH4zI0TmFwZjKuKiD34bafYgsjWsdM++E2oDSUgVFkr7D5d7ai1hs68MHkRDjcCDQ\nLaK8EDQXc6C6GuvTy2/ZMkOX7Xr801+YWVeX+X0Z8G/vRkDOSrD2yYZdow3EGTmo\nx23UOIYljvRn9Tzet2W35+4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "google-analytics@footballdata-439117.iam.gserviceaccount.com",
+  "client_id": "116177040757806347928",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/google-analytics%40footballdata-439117.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

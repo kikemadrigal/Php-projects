@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.Comandos.UpdateComandoActivity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutUpdateComandoActivity"
+            >
+            <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonActualizarComandoUpdateActivity"
+                    android:background="@drawable/estilo_dos_boton"
+                    android:textColor="@drawable/estilo_uno_texto_boton"
+                    android:textSize="8dp"
+                    android:layout_margin="10dp"
+                    android:text="Actualizar"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonVolverComandoUpdateActivity"
+                    android:textSize="8dp"
+                    android:background="@drawable/estilo_dos_boton"
+                    android:textColor="@drawable/estilo_uno_texto_boton"
+                    android:layout_margin="10dp"
+                    android:text="Volver"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonEliminarComandoUpdateActivity"
+                    android:textSize="8dp"
+                    android:background="@drawable/estilo_dos_boton"
+                    android:textColor="@drawable/estilo_uno_texto_boton"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:text="Eliminar"/>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewMensajeCifComandoUpdateActivity"
+                android:textColor="#ff0000"
+                android:layout_marginLeft="80dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre"
+                    android:layout_margin="10dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextNombreComandoUpdateActivity"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewMensajeNombreComandoUpdateActivity"
+                android:textColor="#ff0000"
+                android:layout_marginLeft="80dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Datos"
+                    android:layout_margin="10dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextDatosComandoUpdateActivity"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewMensajeDatosComandoUpdateActivity"
+                android:textColor="#ff0000"
+                android:layout_marginLeft="80dp"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>

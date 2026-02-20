@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.tipolisto.sshconnect">
+
+    <permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.OpcionesActivity"></activity>
+        <activity
+            android:name=".Activities.Comandos.InsertComandoActivity"
+            android:parentActivityName=".Activities.Comandos.ComandosActivity" />
+        <activity
+            android:name=".Activities.Comandos.UpdateComandoActivity"
+            android:parentActivityName=".Activities.Comandos.ComandosActivity" />
+        <activity
+            android:name=".Activities.Clientes.InsertClienteActivity"
+            android:parentActivityName=".Activities.Clientes.ClientesActivity" />
+        <activity
+            android:name=".Activities.Clientes.UpdateClienteActivity"
+            android:parentActivityName=".Activities.Clientes.ClientesActivity" />
+        <activity
+            android:name=".Activities.Comandos.ComandosActivity"
+            android:parentActivityName=".Activities.Conexiones.ConexionesActivity" />
+        <activity
+            android:name=".Activities.Clientes.ClientesActivity"
+            android:parentActivityName=".Activities.Conexiones.ConexionesActivity" />
+        <activity
+            android:name=".Activities.ClientesComandosActivity"
+            android:parentActivityName=".Activities.Conexiones.ConexionesActivity" />
+        <activity
+            android:name=".Activities.InstruccionesActivity"
+            android:parentActivityName=".Activities.Conexiones.ConexionesActivity" />
+        <activity
+            android:name=".Activities.InformationActivity"
+            android:parentActivityName=".Activities.Conexiones.ConexionesActivity" />
+        <activity
+            android:name=".Activities.WifiActivity"
+            android:parentActivityName=".Activities.Conexiones.ConexionesActivity" />
+        <activity
+            android:name=".Activities.Conexiones.InsertConexionActivity"
+            android:parentActivityName=".Activities.Conexiones.ConexionesActivity" />
+        <activity
+            android:name=".Activities.Conexiones.UpdateConexionActivity"
+            android:parentActivityName=".Activities.Conexiones.ConexionesActivity" />
+        <activity android:name=".Activities.Conexiones.ConexionesActivity" />
+        <activity
+            android:name=".Activities.EjecutarSSHActivity"
+            android:parentActivityName=".Activities.Conexiones.ConexionesActivity" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

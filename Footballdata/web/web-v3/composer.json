@@ -1,0 +1,14 @@
+{
+    "name": "murciadevs/footballdata",
+    "description": "Footballdata",
+    "type": "project",
+    "license": "proprietary",
+    "autoload": {
+        "files":[
+           
+        ], 
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}

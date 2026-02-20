@@ -1,0 +1,197 @@
+/*
+generador de código css: https://html-css-js.com/css/generator/border-outline/
+*/
+/*
+Fijate en la propiedad flex-wrap, por defecto está en no wrap y amontona los hijos, con wrap salta si llega al final
+*/
+a {
+    text-decoration: none;
+}
+
+  
+/*
+a:hover {
+    color: red;
+}
+a:visited {
+    color: white;
+}
+a:active {
+color: yellow;
+}
+*/
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.background-pink {
+    background: #FF98E8;
+    background: -moz-linear-gradient(left, #FF98E8 0%, #FFFFFF 60%, #FFFFFF 100%);
+    background: -webkit-linear-gradient(left, #FF98E8 0%, #FFFFFF 60%, #FFFFFF 100%);
+    background: linear-gradient(to right, #FF98E8 0%, #FFFFFF 60%, #FFFFFF 100%);
+}
+.banckground-yellow {
+    background: #E6E562;
+    background: -moz-linear-gradient(left, #E6E562 0%, #F8FFF6 50%, #F4FFFC 100%);
+    background: -webkit-linear-gradient(left, #E6E562 0%, #F8FFF6 50%, #F4FFFC 100%);
+    background: linear-gradient(to right, #E6E562 0%, #F8FFF6 50%, #F4FFFC 100%);
+}
+.background-blue {
+    background: #18B1CE;
+    background: -moz-linear-gradient(left, #18B1CE 0%, #4CFFFA 50%, #FFEFFB 100%);
+    background: -webkit-linear-gradient(left, #18B1CE 0%, #4CFFFA 50%, #FFEFFB 100%);
+    background: linear-gradient(to right, #18B1CE 0%, #4CFFFA 50%, #FFEFFB 100%);
+}
+select {
+    padding:5px;
+    border: 1px solid black;
+ }
+ .juego-roto {
+    border: 4px solid #FF0000;
+ }
+ .gameSeparator{
+    width: 10px;
+    height: 220px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    margin: 10px;
+ }
+.tape-MSX {
+    width: 30px;
+    height: 150px;
+    background: url(../media/lateral-tape-MSX.png);
+    background-color: black;
+    color: white;
+    text-align: center;
+    size: 10em;
+    margin: 5px;
+    writing-mode: vertical-lr;
+    word-wrap: break-word;
+    text-align:center;
+}
+.tape-MSX a {
+    color: white;
+}
+.tape-MSX:hover {
+    -webkit-box-shadow: 4px 4px 0px 0px #000000; 
+    box-shadow: 4px 4px 0px 0px #000000;
+}
+.tape-deluxe-MSX {
+    width: 28px;
+    height: 200px;
+    background: url(../media/lateral-deluxe-MSX.png);
+    background-color: black;
+    color: white;
+    text-align: center;
+    size: 10em;
+    margin: 5px;
+    writing-mode: vertical-lr;
+    word-wrap: break-word;
+    text-align:center;
+}
+.tape-deluxe-MSX a {
+    color: white;
+}
+.tape-deluxe-MSX:hover {
+    -webkit-box-shadow: 4px 4px 0px 0px #000000; 
+    box-shadow: 4px 4px 0px 0px #000000;
+}
+.tape-carton-MSX {
+    width: 35px;
+    height: 220px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    size: 10em;
+    margin: 5px;
+    writing-mode: vertical-lr;
+    word-wrap: break-word;
+    text-align:center;
+}
+.tape-carton-MSX:hover {
+    -webkit-box-shadow: 4px 4px 0px 0px #b5b5b5; 
+    box-shadow: 4px 4px 0px 0px #b5b5b5;
+}
+.cardbridge-MSX {
+    width: 30px;
+    height: 150px;
+    background: url(../media/lateral-cardbridge-MSX.png);
+    background-color: white;
+    color: black;
+    text-align: center;
+    size: 10em;
+    margin: 5px;
+    writing-mode: vertical-lr;
+    word-wrap: break-word;
+    text-align:center;
+}
+.cardbridge-MSX a {
+    color: black;
+}
+.cardbridge-MSX:hover {
+    -webkit-box-shadow: 4px 4px 0px 0px #b5b5b5; 
+    box-shadow: 4px 4px 0px 0px #b5b5b5;
+}
+.cartucho-PS4 {
+    width: 20px;
+    height: 250px;
+    background: url(../media/lateral-ps4.png);
+    color: black;
+    text-align: center;
+    size: 10em;
+    margin: 5px;
+    writing-mode: vertical-lr;
+    word-wrap: break-word;
+    text-align:center;
+}
+
+.cassette-MSX a {
+    text-decoration: none;
+    color:white;
+}
+
+.mueble {
+    background-color: #fee3a3;
+}
+.balda {
+    height: 5px;
+    background-color: #ce9000;
+}
+
+.foto-amigos {
+    background: url(../media/amigos.png) no-repeat center center fixed; 
+}
+
+
+.color-azul{
+    background-color: rgb(202, 238, 238);
+}
+
+.max-height300 {
+    max-height: 300px;
+}
+.show-picture {
+    margin: 10px;
+    border: black;
+    background-color: rgb(156, 224, 246);
+    text-align: center;
+}
+
+/**
+A partir de 576 de mínimo mostrará la imagen grande de fondo
+*/
+@media (min-width: 576px) {
+    .background-home{
+        width: 800px;
+        height: 600px;
+        background: url(../media/background.png) no-repeat; 
+    }
+}
+@media (max-width: 576px) {
+    .background-home{
+        width: 300px;
+        height: 400px;
+        background: url(../media/backgroundSmall.png) no-repeat; 
+    }
+}

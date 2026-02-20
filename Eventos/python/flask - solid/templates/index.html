@@ -1,0 +1,11 @@
+{% extends "plantilla.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+    <h4>Últimos eventos</h4>
+    {% if eventos==None %}
+        <p>No hay eventos</p>
+    {% endif %}
+    {% for evento in eventos %}
+        <p>{{ evento }}</p>
+    {% endfor %}
+{% endblock %}

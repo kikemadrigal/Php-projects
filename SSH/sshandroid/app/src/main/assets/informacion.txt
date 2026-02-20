@@ -1,0 +1,236 @@
+
+Instalacion
+
+sudo apt-get install openssh-server
+sudi apt-get install openssh-clients
+desistalación
+sudo apt-get purge --auto-remove openssh-server
+
+
+Archivo de configuracion
+sudo nano /etc/ssh/sshd_config
+publicKeysAuthentication yes
+passwordAuthentication no
+
+Directoorios importantes
+/etc/ssh/
+/home/nombreUsuario/.ssh/
+
+Iniciar, parar servicio ssh y ver el estado
+sudo /etc/init.d/ssh start
+sudo /etc/init.d/ssh stop
+sudo /etc/init.d/ssh status
+
+Reiniciar servidor ssh
+sudo systemctl restart ssh
+
+
+
+sudo /etc/init.d/ssh restart
+sudo service ssh restart
+
+Configuración del firewall
+sudo ufw status
+sudo ufw disable
+sudo ufw enable
+
+
+
+
+
+Que es SSH?
+Es un servicio para la gestión y administración segura remota de servidores, es la evolución de telnet y remote she (rsh).
+
+
+
+
+
+
+
+
+
+¿Para que sirve?
+
+-Nos va permitir que a través de un terminal nos conectemos a un servidor y tras pasar una verificación de contraseñas y/o certificados (o llaves públicas) trabajemos en el terminal como si estuvieramos en el mismo.
+-Admistrar servidores de forma remota y segura.
+-Cración de tuneles inversos, redirección de puertos, etc.
+¿como Funciona?
+1.Instalamos el servidor ssh con “sudo apt-get install openssh-server”.
+2.Instalamos el ssh cliente el el ordenador cliente “sudo apt-get install openssh-client”.
+3.No es necsario que toquemos nada de la configuración de ambos.
+4.Tenemos que saber que hay dos capetas importantes en ambos ordenadores:
+	En /etc/ssh/ 
+		sshd_config  Contiene los archivos de configuración del servidor
+		ssh_config : contiene los archivos de confiración del cliente (por si cambias el puerto de comunicación en el servidor y si cambias algo en el servidor para configurar elcliente )
+		ssh_host_* y ssh_host_*.pub: Son las llaves y los candados abiertos para las comunicaciones
+		moduli: estánla configuración de las llaves	
+	En /home/nombreUsuario/.ssh/ están los archivos que se irán creando dinámicamente, pueden salir:
+		knows_host: con los servidores a los que te has ido conectando (esto se utiliza para no pedir las contraseñas dentro irán almacenando los hash de las llaves del servidor que están en el servidor en /etc/ssh /
+		id_rsa y id_rsa.pub es la llave y el candado abierto, la llave no se toca pero el cando abierto es necesario que los coloques en el servidor si el método de autenticación es por clave pública, esto es configurado en el servidor en el archivo  /etc/ssh/sshd_config.
+		authorized_keys: el archivo contienen todos los candados abiertos de los clientes que le das acceso por clave publica
+4. Cuando un cliente se intentan conectar:
+	1.Compara el hash de la llave del usuario del servidor (la que está en /etc/ssh/ ssh_host_ecdsa_key.pub) con la que está en el usuario en el cliente en el archivo /home/nombreUsuario/.ssh/knows_host, si no está o no existe el archivo te saldrá un mensaje que no es conocido y te pedirá yes o no para escribirlo dentro de este archivo, si no lo metes dentro de ese archivo siempre te saldrá este mensaje.
+	2.Compara as llaves que están escritas dentro del usuario del servidor de /home/nombreUsuario/.ssh/authorized_keys  con las llaves del usuario del cliente que está en /etc/ssh/ ssh_host_ecdsa_key.pub, si hay alguna iniciará sesión sin pedir contraseña.
+	
+
+
+Mas en profundidad con las carpetas y archivos SSH 
+
+Carpetas de SSH:
+1.Carpeta del servidor:
+
+-moduli se encuentra toda la configuración de las llaves.
+-ssh_host_ecdsa_key: llave del servidor creada para el método de cifrado ecdsa. Es el más fuerte y es el que se recomienda utilizar
+-ssh_host_ed25519_key: llave del servidor para el método de cifrado ed25519.
+-ssh_host_rsa_key: llave del servidor para el método de cifrado rsa.
+-*.pub: son los candados que serán enviados a los clienetes y que despues de cerrarse solo los podrá abrir el archivo igual que no termina en pub, es decir la clave.
+-ssh_config: es la configuración para el clienet.
+	En este archivo lo único importante es decirle que nos podremos conectar a todos los servidores con host *, también tenemos el puerto por defecto.
+sshd_config: 
+As la configuración para el servidor, aui encontramos: para saber todos las condiguraciones posibles en el servidor escribe man sshd_config:
+
+
+
+
+	
+
+
+Port 22  :este es el puerto con el que queremos conectarnos con el cliente, lo dejamos por defecto en 22
+UsePrivilegeSeparation yes  : es para separar los privilegios cuando se conecten
+KeyRegenerationInternal 3600  : es el intervalo en el que se va a regenrar lallave, 1 hora
+ServerKeyBits 1024 : tamaño de cifrado de la llave, hay que cambiarlo a 2048 para que sea mayor el cifrado
+
+#Logging
+SyslogFacility AUTH :solo mostrará los avisos (cuando ponemos ssh usuario@equipo -v) -v es verbose a nivel de athenticación
+LogLevel INFO : si lo cambiamos a modo DEBUG nos mostrará mas avisos
+
+#Authentication
+LoginGraceTime 2m  : si es 2 minutos no se conecta se desconectará solo
+PermitRootLogin prohibit-password  : root no puede tener permisos para authentificarse por ssh por eso le ponemos  PermitRootLogin no
+MaxAuthTries 6  : que maximo se permite 6 intenps de conexión, evitaremos los ataquen de Hidra
+MaxSessions 10   : maxima cantidad de sesiones por usuario.
+
+StrictModes yes  : es para que cada vez que se conecte un usuario se conecte a su home
+RSAAuthentication yes  : para poder autehnticase utilizando el modulo RSA
+PubkeyAuthentication yes : siempre lo dejamos en yes para que exista esa posibilidad de authenticarse con clave publica
+PermitEmptyPasswords no:  no vamos a permitir password vacios
+
+X11Forwarding no : no vamos a permitir la redireccion de las x
+PrintMotd yes : para que muestre el banner motd
+PrintLastLog yes   :para imprimir laultima vez que se hizo un registro
+TCPKeepAlive yes   : mantener la conexión viva
+
+Banner none   : vamos a imprimir un banner de conexión (un mensaje de bienvenida), lo ocambiamos a Banner /etc/issue.net
+
+AcceptEnv LANG LC_*   :esto aceptará las variables del usuario del idioma para que el idioma se adapte al del usuario
+UsePAM yes  : para hacer las utentocaciones
+
+
+2.Carpeta de configuración de claves y host conocidos:
+
+
+
+
+
+
+
+
+
+
+
+
+Creando usuarios y poniendoles contraseñas
+Para poder conectarnos es necesario crear usuarios y ponerles las contraseñas, esto se hace con adduser, es el comando que siempre se utiliza, es un programa hecho en perl a partir del comadno useradd que simplifica las cosas y muy amigable, vamos crear el usuario soporte:
+  
+
+Si quisieras cambiar la contraseña se hace con psswd, vamos a cambiar la contraseña del usuario ubuntu:
+
+
+Haciendo una copia de seguridad
+Para esto vamos a la carptea /etc/ssh/ y ponemos cp sshd_config sshd_coniig_bk
+
+
+
+Vamos a conectarnos a un servidor con el open-ssh instalado
+
+
+Cundo intentamos conectarnos lcon elservidor (da igual como tengamos el métdodo de autenticación por contraseña o certificado ) lo primero que te ofrece el servidor es un hash de tipo ECDSA que es su clave publica (su certificado), te dice 
+
+En este momento ha comparado los hash del archivo /home/nombreUsuario/.ssh/knows_host, del usuario cliente con el archivo /dev/ssh/ssh_host_hey-ecsa.pub del usuario del servidor si le dice yes  se almacenará una cadena de conexión de tipo sha2 que identificará la llave de tipo edcsa en el usuario cliente home/nombreUsuario/.ssh/knows_host, la próxima vez que te conecetees no te saldrá este mensaje.
+
+
+
+
+
+Creando Certificados (clave privada y pública) para conectarse a un servidor sin escribir contraseñas
+
+Para generar la llave privada y publica tenemos que poner en el cliente (-t es tipo, -b son los bits):
+para claves rsa: ssh-keygen -t rsa -b 2048
+para el cifrado edcsa:   ssh-keygen -t ecdsa -b 521
+En las preguntas que hace le damos todo intro:
+
+
+
+Transferir la llave publica a otro ordenador
+Ahora tenemos que mandar la llave publica al servidor con ssh-copy-id -i usuario@equipo:
+
+ ssh-copy-id -i portatil@192.168.1.106
+
+
+A partir de este momento, y teniendo todos los parámteros por defecto del  /etc/ssh/sshd_config en el servidor al conectarnos no nos pedirá la contraseña, seautenticará con la llave que le hemos pasado.
+
+
+
+
+Enviando comandos con SSH y recibiéndolos en el cliente
+Podemos enviarle comandos al servidor remoto con SSH y recibirlos en el cliente:
+
+
+
+Conexión con SFTP
+Podemos conectarnos con SFTP:
+
+Si le hemos cambiado el puerto tendremos que especificarselo: 
+
+
+Para conectarnos con Filezilla:
+
+
+Como la clave del servidor no está en el archivo de hosts conoccidos, saldrá esto:
+
+
+Se conectará a pulsar Aceptar:
+
+
+SCP
+
+Nos va permitir enviar y recibir archivos del y al servidor:
+
+Enviar información al servidor
+1.navegamos hasta donde se encuentre el archivo que queremos pasar al servidor, fíjate que ubuntu tiene que tratar los espacios en blanco con barras invertidas:
+
+Ahora vamos un archivo al servidor,para indicarle la ruta /home/ del usuario del servidor ponemos dos puntos:
+
+
+
+Si hemos modificado el puerto se lo tendremos que indicar:
+
+
+Para ver la lista de todos los parámetros o la ayuda pon man scp, si quieres crear un archivo con estos datos pon “man > /home/nombreDeUsuario/Escritorio/nombreArchivo.txt” donde nombreUsuario es tu usuario y nombreArchivo es un nombre cualquiera.
+
+Traer información desde el servidor a tu máquina
+
+Fijate que con punto le estamos indicando que lo deje en el home del usuario cliente:
+
+Para traer todass las carpetas y archivos de forma recurrente y los deje en la carpeta SERVER del cliente, especificando el puerto 55342, ponemos:
+
+Copiar información entre 2 servidores
+
+
+
+
+
+
+
+
+

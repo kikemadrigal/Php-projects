@@ -1,0 +1,4 @@
+#Sun Mar 31 06:06:56 CEST 2019
+base.0=/home/despacho/Escritorio/FotomapaJava/app/build/intermediates/transforms/dexMerger/debug/10
+path.0=classes.dex
+renamed.0=classes.dex

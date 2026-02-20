@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+    tools:context=".Activities.Comandos.InsertComandoActivity">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         android:id="@+id/linearLayoutInsertClienteActivity"
+         >
+         <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:gravity="center_horizontal">
+
+             <Button
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/buttonInsertarInsertComandoActivity"
+                 android:background="@drawable/estilo_dos_boton"
+                 android:textColor="@drawable/estilo_uno_texto_boton"
+                 android:textSize="8dp"
+                 android:layout_margin="10dp"
+                 android:text="Insertar"/>
+             <Button
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/buttonVolverInsertComandoActivity"
+                 android:textSize="8dp"
+                 android:background="@drawable/estilo_dos_boton"
+                 android:textColor="@drawable/estilo_uno_texto_boton"
+                 android:layout_margin="10dp"
+                 android:text="Volver"/>
+
+         </LinearLayout>
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Nombre"
+                 android:layout_margin="10dp"/>
+             <EditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/editTextNombreInsertComandoActivity"/>
+         </LinearLayout>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/textViewMensajeNombreInsertComandoActivity"
+             android:textColor="#ff0000"
+             android:layout_marginLeft="80dp"
+             />
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Datos"
+                 android:layout_margin="10dp"/>
+             <EditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/editTextDatosInsertComandoActivity"/>
+         </LinearLayout>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/textViewMensajeDatosInsertComandoActivity"
+             android:textColor="#ff0000"
+             android:layout_marginLeft="80dp"
+             />
+
+
+     </LinearLayout>
+
+ </ScrollView>
