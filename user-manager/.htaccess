@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteBase /
+	RewriteCond %{SCRIPT_FILENAME} !-d
+	RewriteCond %{SCRIPT_FILENAME} !-f
+	#RewriteCond %{HTTPS} off
+	#RewriteCond %{HTTP_HOST} !^midominio\.cl$ [NC]
+	#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} 
+	#RewriteCond %{HTTPS} !=on
+	
+	#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} 
+	
+	RewriteRule ^.*$ ./index.php
+	RewriteCond %{HTTPS} !=on
+	RewriteRule ^/?(.*) https://%{HTTP_HOST}%{REQUEST_URI} 
+	#RewriteRule ^/?(.*) https://%{SERVER_NAME}
+</IfModule>
+
